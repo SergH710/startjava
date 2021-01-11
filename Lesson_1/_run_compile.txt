@@ -1,0 +1,14 @@
+*) компиляция
+javac MyFirstApp.java
+javac -encoding utf8 MyFirstApp.java
+
+-создаст файл *.class
+
+*) запуск
+java MyFirstApp
+
+Если вы используете windows 10, то можно настроить ОС на поддержку Юникод. В этом случае ключ -encoding utf8 уже не требуется.
+==========
+Для отображения байт-кода класса необходимо в консоли перейти в папку, в которой находится файл MyFirstApp.class, и написать:
+javap -c -s -verbose MyFirstApp
+=======
